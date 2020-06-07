@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Our first webpage</title>
+    <style>
+      body{
+        background-color: beige;
+      }
+
+      #nav1{
+        background-color: cadetblue;
+      }
+
+      .firstList{
+        color: crimson;
+      }
+
+      ol{
+        border: 3px solid black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>World of Donuts</h1>
+      <nav id="nav1">
+        <ul >
+          <li class="firstList">Home Page</li>
+          <li style="color:darkgreen">Contact us</li>
+          <li class="firstList">About</li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Donuts Flavors</h1>
+
+      <ol>
+        <li>Eclairs</li>
+        <li>Double Chocolate</li>
+        <li>Sugar dipped</li>
+      </ol>
+
+    </main>
+
+    <footer>
+
+    </footer>
+    <script>
+      var userName = prompt('What is your name?');
+      var favoriteFlavor = prompt('What is your favorite flavor?', 'Eclair');
+      console.log('The user entered the name ',userName);
+      alert('Hello '+ userName + ' You favorite flavor is '+ favoriteFlavor);
+    </script>
+  </body>
+</html>
