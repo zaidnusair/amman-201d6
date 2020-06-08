@@ -1,0 +1,27 @@
+body{
+  background-color: bisque;
+}
+
+h1{
+  font-family: fantasy;
+}
+
+p{
+  color: darkblue;
+}
+
+.European{
+  color: darkred;
+}
+
+.American{
+  color: darkgreen;
+}
+
+.japanese{
+  color:darksalmon;
+}
+
+#japanese-description{
+  color: gold;
+}
