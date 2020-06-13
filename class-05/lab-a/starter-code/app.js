@@ -59,16 +59,20 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 
 function sumAndMultiply(a, b, c) {
-  var total1 = sum(a, b);
-  var total3 = sum(total1[0], c);
 
-  var total2 = multiply(a, b);
-  var total4 = multiply(total2[0], c);
+  var total1 = sum(a, b)[0];
+  var total3 = sum(total1, c)[0];
 
-  // var msg1 = a + " and " + b + " and " + c + " sum to " + total3 + ".";
-  // var msg2 =
-  // "The product of " + a + " and " + b + " and " + c + " is " + total4 + ".";
-  return [total3, total4];
+  var total2 = multiply(a, b)[0];
+  var total4 = multiply(total2, c)[0];
+
+  var msg1 = a + " and " + b + " and " + c + " sum to " + total3 + ".";
+  var msg2 =
+    "The product of " + a + " and " + b + " and " + c + " is " + total4 + ".";
+  return [total3, total4, msg1, msg2];
+
+ 
+
 
   //eslint-disable-line
 }
