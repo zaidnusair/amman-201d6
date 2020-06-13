@@ -102,7 +102,15 @@ function sumArray(sumArr) {
   var a = sum(sumArr[0], sumArr[1])[0];
   a = sum(a, sumArr[2])[0];
 
-  var msg = "2,3,4 was passed in as an array of numbers, and 9 is their sum.";
+  var msg =
+    sumArr[0] +
+    "," +
+    sumArr[1] +
+    "," +
+    sumArr[2] +
+    " was passed in as an array of numbers, and " +
+    a +
+    " is their sum.";
 
   var array1 = [a, msg];
 
